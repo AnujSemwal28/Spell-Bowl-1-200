@@ -1,17 +1,7 @@
-SPELL BOWL PWA
+Spell Bowl Custom Range PWA
 
-FILES
-- index.html: app
-- manifest.webmanifest: installation metadata
-- service-worker.js: offline cache
-- icons/: install icons
+Upload index.html, manifest.webmanifest, service-worker.js, and the icons folder to the root of your GitHub Pages repository. Replace the existing files when prompted. Keep the folder structure unchanged.
 
-IMPORTANT
-A Progressive Web App must be served over HTTPS (or localhost during testing). Opening index.html directly with file:// will run the quiz, but installation and offline caching will not activate.
+The user selects a starting and ending word number for every new test. Valid values are 1 through 200, inclusive.
 
-QUICK HOSTING
-Upload every file and folder in this package to the same website root. Do not rename or omit the icons folder. After the HTTPS site loads, use the Install app button when shown, or the browser's install/add-to-home-screen command.
-
-LOCAL TEST
-From the unzipped folder, run a local static server such as: python -m http.server 8000
-Then open http://localhost:8000 in a browser.
+After GitHub Pages publishes the update, refresh the site. If the old version remains cached, close the installed app/browser tab and reload the page once while online.
