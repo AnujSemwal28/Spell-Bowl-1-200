@@ -1,7 +1,11 @@
-Spell Bowl Custom Range PWA
+SPELL BOWL PWA, GUY AND JENNY EDITION
 
-Upload index.html, manifest.webmanifest, service-worker.js, and the icons folder to the root of your GitHub Pages repository. Replace the existing files when prompted. Keep the folder structure unchanged.
+Upload all files and the icons folder to the root of your GitHub Pages repository. Replace the existing files.
 
-The user selects a starting and ending word number for every new test. Valid values are 1 through 200, inclusive.
+Voice behavior:
+- Jenny is selected by default.
+- The only selectable voices are Jenny and Guy.
+- A single resolved voice object is assigned to both the word utterance and sentence utterance before either is queued, ensuring the pair uses the same voice.
+- Voice availability depends on the browser and device; Microsoft Edge is recommended for Microsoft voices.
 
-After GitHub Pages publishes the update, refresh the site. If the old version remains cached, close the installed app/browser tab and reload the page once while online.
+If an older PWA remains visible, reload the published page while online. The service-worker cache name has been changed to spell-bowl-v4.
