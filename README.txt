@@ -1,11 +1,7 @@
-SPELL BOWL PWA, GUY AND JENNY EDITION
+SPELL BOWL 750-WORD PWA
 
-Upload all files and the icons folder to the root of your GitHub Pages repository. Replace the existing files.
+Upload index.html, manifest.webmanifest, service-worker.js, word-list.json, and the icons folder to the root of the GitHub Pages repository. Replace prior files and commit.
 
-Voice behavior:
-- Jenny is selected by default.
-- The only selectable voices are Jenny and Guy.
-- A single resolved voice object is assigned to both the word utterance and sentence utterance before either is queued, ensuring the pair uses the same voice.
-- Voice availability depends on the browser and device; Microsoft Edge is recommended for Microsoft voices.
+Jenny is the default. Guy is the other choice. The app resolves one voice and assigns it to both the word and sentence utterances before playback.
 
-If an older PWA remains visible, reload the published page while online. The service-worker cache name has been changed to spell-bowl-v4.
+The selectable custom range is 1-750. The service-worker cache is spell-bowl-750-v1.
